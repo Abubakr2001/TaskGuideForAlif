@@ -21,6 +21,8 @@ class GuideRepository @Inject constructor(private val service: GuidesApi,private
                 dao.insertAll(result.body()?.data!!)
             }
         }
+
+
         return dao.getAll()
     }
 }
